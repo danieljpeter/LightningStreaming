@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="I'm a Lightning Web Component subscribed to a platform event." icon-name="standard:lightning_component">
+        <div class="slds-m-around_medium">
+            <template for:each={messages} for:item="message">
+                <p key={message}>{message}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

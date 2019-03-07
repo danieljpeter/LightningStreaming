@@ -1,0 +1,16 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:appHostable">
+
+
+    <aura:attribute name="messages" type="String[]" default="[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+
+    <lightning:empApi aura:id="empApi"/>
+
+    <lightning:card title="Hello Streaming World!">
+
+        <!-- LWC below -->
+        <c:listenforhello messages="{!v.messages}"/>
+
+    </lightning:card>
+
+</aura:component>
